@@ -1,0 +1,147 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face{font-family:'FontAwesome';src:url('../public/fontawesome-webfont.woff2')}
+
+.icon {
+  font-family: FontAwesome;
+}
+
+
+
+.email::before {
+  font-family: FontAwesome;
+  content: "\f0e0";
+}
+
+.dob::before {
+  font-family: FontAwesome;
+  content: "\f1fd";
+}
+
+.phone::before {
+  font-family: FontAwesome;
+  content: "\f095 ";
+  white-space:nowrap;
+}
+
+i.icon.filter:before {
+  content: "\f0b0";
+}
+
+.filter-container {
+	padding: .5rem;
+	padding-right: 1.5rem;
+	border: 1px solid rgb(182, 182, 182);
+	outline: none;
+  border-radius: 1rem;
+  font-weight:bold;
+  color:rgb(182, 182, 182);
+  display:inline-block;
+}
+
+.filter-input {
+  border:none;
+  outline: none;
+  color:rgb(182, 182, 182);
+  background:inherit;
+}
+
+.filter-input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:rgb(182, 182, 182);
+  opacity: 1; /* Firefox */
+}
+
+.filter-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:rgb(182, 182, 182);
+}
+
+.filter-input::-ms-input-placeholder { /* Microsoft Edge */
+  color:rgb(182, 182, 182);
+}
+
+.item {
+
+ border-radius: .25rem;
+}
+
+.user {
+  border: solid black 1px;
+  border-radius:5px;
+  padding:5px;
+  margin:2px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 2px;
+  grid-auto-rows: minmax(25px, auto);
+  width:300px;
+}
+
+.sub-header {
+  grid-column: 1 / 3;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap:10px;
+}
+
+.user-info-subtitle {
+  font-size:.8rem;
+}
+
+.user input {
+  border:none;
+  outline: none;
+  padding:0px;
+  border-bottom:solid 1px rgb(182, 182, 182);
+}
+
+.info-header input {
+  text-align:center;
+}
+
+.sort {
+  margin-left:10px;
+}
+
+.App-header {
+  background-color:rgb(135, 58, 23);
+  padding:2px;
+  margin-bottom:5px;
+}
+
+.App-header h2 {
+  display:inline-block;
+  margin-right:10px;
+  margin-left:10px;
+  color:white;
+}
+
+
+header {
+  height: 75px;
+}
+
+footer {
+  position:absolute;
+  bottom:0px;
+  width:100%;
+  height:30px;
+  background-color:rgb(135, 58, 23);
+  color:white;
+  padding-left:10px;
+  line-height:2;
+ }
+
+main {
+  position:absolute;
+  width:100%;
+  top:75px;
+  bottom:30px;
+  overflow:auto;
+}
